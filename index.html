@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Responsive Admin Dashboard</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 font-sans">
+  <div class="flex h-screen">
+    <!-- Sidebar -->
+    <aside class="w-64 bg-blue-900 text-white">
+      <div class="p-4 text-2xl font-bold">Admin Dashboard</div>
+      <nav>
+        <a href="#" class="block py-2.5 px-4 hover:bg-blue-700">Dashboard</a>
+        <a href="#" class="block py-2.5 px-4 hover:bg-blue-700">Users</a>
+        <a href="#" class="block py-2.5 px-4 hover:bg-blue-700">Sales</a>
+        <a href="#" class="block py-2.5 px-4 hover:bg-blue-700">Analytics</a>
+        <a href="#" class="block py-2.5 px-4 hover:bg-blue-700">Settings</a>
+      </nav>
+    </aside>
+    
+    <!-- Main Content -->
+    <main class="flex-1 p-6 overflow-y-auto">
+      <h1 class="text-3xl font-semibold mb-6">Dashboard Overview</h1>
+      
+      <!-- Statistics Cards -->
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+        <div class="bg-white p-6 shadow rounded-lg">
+          <h2 class="text-lg font-semibold mb-2">Total Users</h2>
+          <p class="text-4xl font-bold">1,245</p>
+        </div>
+        <div class="bg-white p-6 shadow rounded-lg">
+          <h2 class="text-lg font-semibold mb-2">Monthly Revenue</h2>
+          <p class="text-4xl font-bold">$18,720</p>
+        </div>
+        <div class="bg-white p-6 shadow rounded-lg">
+          <h2 class="text-lg font-semibold mb-2">New Orders</h2>
+          <p class="text-4xl font-bold">356</p>
+        </div>
+        <div class="bg-white p-6 shadow rounded-lg">
+          <h2 class="text-lg font-semibold mb-2">Website Traffic</h2>
+          <p class="text-4xl font-bold">5,678</p>
+        </div>
+      </div>
+
+      <!-- Recent Tasks -->
+      <div class="mt-10">
+        <h2 class="text-2xl font-semibold mb-4">Recent Tasks</h2>
+        <div class="bg-white p-6 shadow rounded-lg">
+          <ul class="list-disc pl-5 space-y-2">
+            <li>Complete design review by Feb 15</li>
+            <li>Prepare sales report for the monthly meeting</li>
+            <li>Update user database</li>
+            <li>Fix login page bug</li>
+          </ul>
+        </div>
+      </div>
+    </main>
+  </div>
+</body>
+</html>
